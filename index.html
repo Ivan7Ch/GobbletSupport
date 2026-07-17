@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gobblet — Support</title>
+<style>
+  :root {
+    --bg: #14161c;
+    --bg-panel: #1c1f28;
+    --line: #2a2e3a;
+    --text: #eceef2;
+    --text-dim: #9a9fb0;
+    --small: #4fb8a8;
+    --medium: #e0a84e;
+    --large: #d9636c;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, "Segoe UI", Inter, sans-serif;
+    line-height: 1.6;
+  }
+
+  .display {
+    font-family: "Georgia", "Iowan Old Style", serif;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+
+  header {
+    padding: 72px 24px 48px;
+    text-align: center;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .stack {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 96px;
+    height: 96px;
+    position: relative;
+    margin-bottom: 28px;
+  }
+  .stack span {
+    position: absolute;
+    border-radius: 50%;
+  }
+  .stack .l { width: 92px; height: 92px; background: var(--large); opacity: 0.9; }
+  .stack .m { width: 62px; height: 62px; background: var(--medium); opacity: 0.95; }
+  .stack .s { width: 34px; height: 34px; background: var(--small); }
+
+  h1 {
+    font-size: 40px;
+    margin: 0 0 8px;
+  }
+
+  header p {
+    color: var(--text-dim);
+    font-size: 17px;
+    margin: 0;
+    max-width: 480px;
+    margin-inline: auto;
+  }
+
+  main {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 56px 24px 96px;
+  }
+
+  section { margin-bottom: 56px; }
+
+  h2 {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-dim);
+    margin: 0 0 24px;
+  }
+
+  .faq-item {
+    border-bottom: 1px solid var(--line);
+    padding: 20px 0;
+  }
+  .faq-item:first-child { padding-top: 0; }
+
+  .faq-q {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 0 8px;
+  }
+
+  .faq-a {
+    color: var(--text-dim);
+    font-size: 15px;
+    margin: 0;
+  }
+
+  .contact-panel {
+    background: var(--bg-panel);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 32px;
+    text-align: center;
+  }
+
+  .contact-panel p {
+    color: var(--text-dim);
+    margin: 0 0 20px;
+    font-size: 15px;
+  }
+
+  .contact-panel a.email {
+    display: inline-block;
+    background: var(--text);
+    color: var(--bg);
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: none;
+    padding: 12px 28px;
+    border-radius: 8px;
+  }
+
+  footer {
+    text-align: center;
+    padding: 32px 24px;
+    color: var(--text-dim);
+    font-size: 13px;
+    border-top: 1px solid var(--line);
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="stack">
+    <span class="l"></span>
+    <span class="m"></span>
+    <span class="s"></span>
+  </div>
+  <h1 class="display">Gobblet — Support</h1>
+  <p>Help with matches, multiplayer, and the AI opponent.</p>
+</header>
+
+<main>
+
+  <section>
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <p class="faq-q">How do I play online with a friend?</p>
+      <p class="faq-a">Open Gobblet, choose Online Match from the main menu, and share your match link or code with the person you want to play. Both players need an active internet connection for the match to sync.</p>
+    </div>
+
+    <div class="faq-item">
+      <p class="faq-q">My opponent's move isn't showing up / the board seems frozen.</p>
+      <p class="faq-a">This is usually a connection hiccup. Close and reopen the match from the main menu — the board re-syncs automatically. If it keeps happening, check that both players have a stable connection and try starting a new match.</p>
+    </div>
+
+    <div class="faq-item">
+      <p class="faq-q">How does the AI opponent work?</p>
+      <p class="faq-a">You can start a match against the built-in AI any time from the main menu, no connection required. It plays a full strategic game, including covering your pieces with larger ones.</p>
+    </div>
+
+    <div class="faq-item">
+      <p class="faq-q">How do I request a rematch?</p>
+      <p class="faq-a">After a match ends, tap Play Again. The other player needs to confirm on their side too before the new match starts.</p>
+    </div>
+
+    <div class="faq-item">
+      <p class="faq-q">I found a bug or the app crashed.</p>
+      <p class="faq-a">Please email us with a short description of what happened and, if possible, what you were doing right before it occurred. That detail helps us track it down quickly.</p>
+    </div>
+
+    <div class="faq-item">
+      <p class="faq-q">How do I delete my data or account?</p>
+      <p class="faq-a">Email us from the address you'd like removed, and we'll delete your match history and any associated data.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Still need help?</h2>
+    <div class="contact-panel">
+      <p>Email us and we'll get back to you as soon as we can.</p>
+      <a class="email" href="mailto:inch70798@gmail.com">inch70798@gmail.com</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  © 2026 Gobblet
+</footer>
+
+</body>
+</html>
